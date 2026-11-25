@@ -17,6 +17,7 @@ from another model.
 |---|---|---|---|---|
 | LOQ 15AHP10 | 83JG | `83JG.bin` | `KLG2xxxx.ROM` (e.g. `r8cn26ww.exe` → `KLG20026.ROM`) | confirmed (one unit) |
 | LOQ 15AHP9 | 83DX | `83DX.bin` | `JLG5xxxx.ROM` (e.g. `nzcn42ww.exe` → `JLG50042.ROM`) | **not tested** |
+| LOQ 16APH8 | 82XU | `82XU.bin` | `ILG5xxxx.ROM` (e.g. `lycn50ww.exe` → `ILG50050.ROM`) | **not tested** |
 
 The ROM is the signed PE image, about 34 MB (starts with `MZ`), not a raw
 32 MB dump. Check its SHA-256 before copying it:
@@ -25,6 +26,7 @@ The ROM is the signed PE image, about 34 MB (starts with `MZ`), not a raw
 |---|---|
 | `KLG20026.ROM` (R8CN26WW) | `5eafb981b6ea5802717f4c7bf0e4c858a4d0effeaff39fa1a3dc3c758b4aed5e` |
 | `JLG50042.ROM` (NZCN42WW) | `57bb5042c6f083f64b4b57a4aa91e097e86011a1d0231b15eb7254581c0d7e40` |
+| `ILG50050.ROM` (LYCN50WW) | `03bd35a62dadffac3f0858822ea051bae44fc3fe60b1f91080b6e68cc4569b4a` |
 
 Your machine type is the `ProductName` field:
 

@@ -27,6 +27,7 @@ model, so a CAB is never offered to the wrong laptop.
 |---|---|---|---|
 | LOQ 15AHP10 | 83JG | R8CN26WW | Same-version reinstall **through this remote** succeeded on one unit (2026-11-25, fwupd 2.1.10); Fn+R recovery confirmed |
 | LOQ 15AHP9 | 83DX | NZCN42WW | This payload upgrade-tested (NZCN28WW → NZCN42WW) on one unit via fwupd by [Firi0n](https://github.com/Firi0n); install through this remote not yet tested |
+| LOQ 16APH8 | 82XU | LYCN50WW | **Untested.** Hardware ID computed from an owner's DMI values; nobody has installed it yet |
 
 Check your machine type with `cat /sys/class/dmi/id/product_name`.
 Updating resets BIOS settings to defaults (Secure Boot may be re-enabled);

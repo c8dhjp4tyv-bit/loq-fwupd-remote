@@ -24,7 +24,7 @@ fi
 
 product=$(cat /sys/class/dmi/id/product_name 2>/dev/null || echo unknown)
 case "$product" in
-    83JG|83DX) ;;
+    83JG|83DX|82XU) ;;
     *)
         echo "warning: machine type $product is not a supported model;" >&2
         echo "the remote will install but offer nothing for this machine." >&2
