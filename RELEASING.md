@@ -6,16 +6,17 @@ must contain all CABs**, not only the new one. CABs never go into Git.
 Build and sign in the private workspace (signing key stays there):
 
 ```sh
+TAG=2026.11.25
 cd "<workspace>/fwupd/community-remote"
-# build CABs from model profiles, then sign all of them together;
-# see the README there for the exact commands
+# build CABs from model profiles, then sign all of them together with
+#   --base-uri https://github.com/c8dhjp4tyv-bit/loq-fwupd-remote/releases/download/$TAG/
+# (fwupd needs absolute CAB URLs; pin them to the release tag)
 ./verify_local_remote.sh
 ```
 
-Publish the signed output as a new release:
+Publish the signed output as a new release (same TAG as above):
 
 ```sh
-TAG=2026.11.25
 cd "<workspace>/fwupd/community-remote"
 gh release create "$TAG" --repo c8dhjp4tyv-bit/loq-fwupd-remote \
   --title "$TAG" --notes "Models and BIOS versions in this release: ..." \
