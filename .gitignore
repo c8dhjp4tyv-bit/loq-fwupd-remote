@@ -1,0 +1,4 @@
+*.cab
+firmware.xml.gz
+firmware.xml.gz.jcat
+*.key
