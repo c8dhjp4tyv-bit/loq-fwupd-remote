@@ -47,9 +47,8 @@ fwupdmgr update
 
 `install.sh` checks the root CA fingerprint, installs it as a trust anchor
 for fwupd, adds the remote and refreshes. Before running it, compare the
-fingerprint with the one published in
-[the upstream issue](https://github.com/fwupd/firmware-lenovo/issues/461)
-or ask in the Discord:
+fingerprint below with the one pinned in the Discord, so a tampered copy of
+this repository cannot slip in a different CA:
 
 ```
 10:C7:CF:91:34:03:F6:95:2D:B6:E0:5F:AB:37:8A:3C:CC:3F:AE:4A:5F:B5:FD:98:BA:A6:33:FB:3D:C0:BC:44

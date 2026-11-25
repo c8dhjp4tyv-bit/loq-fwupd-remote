@@ -19,8 +19,12 @@ from another model.
 | LOQ 15AHP9 | 83DX | `83DX.bin` | `JLG5xxxx.ROM` (e.g. `nzcn42ww.exe` → `JLG50042.ROM`) | **not tested** |
 
 The ROM is the signed PE image, about 34 MB (starts with `MZ`), not a raw
-32 MB dump. Check its SHA-256 against `tools/models/<model>.json` in the
-tools repository.
+32 MB dump. Check its SHA-256 before copying it:
+
+| ROM | SHA-256 |
+|---|---|
+| `KLG20026.ROM` (R8CN26WW) | `5eafb981b6ea5802717f4c7bf0e4c858a4d0effeaff39fa1a3dc3c758b4aed5e` |
+| `JLG50042.ROM` (NZCN42WW) | `57bb5042c6f083f64b4b57a4aa91e097e86011a1d0231b15eb7254581c0d7e40` |
 
 Your machine type is the `ProductName` field:
 
